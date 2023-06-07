@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_DESTINIES, GET_DETAIL, PUT_DESTINY } from '../utils/constants';
+import { GET_DESTINIES, GET_DETAIL, PUT_DESTINY, GET_SEARCH } from '../utils/constants';
 import { PORT } from '../utils/constants';
 
 export function getDestinies() {
@@ -10,7 +10,7 @@ export function getDestinies() {
       type: GET_DESTINIES,
       payload: json.data,
     });
-  };
+  }
 }
 
 export function getDetailById(_id) {

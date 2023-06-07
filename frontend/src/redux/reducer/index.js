@@ -1,11 +1,12 @@
-import { GET_DESTINIES, GET_DETAIL, DELETE_DESTINY, POST_CREATE, PUT_DESTINY } from "../utils/constants"
+import { GET_DESTINIES, GET_DETAIL, DELETE_DESTINY, POST_CREATE, PUT_DESTINY, GET_SEARCH  } from "../utils/constants"
 
 const initialState = {
     destinies: [],
     allDestinies: [],
     detail: {},
     delete: [],
-    put: []
+    put: [],
+
 }
 
 export default function rootReducer(state = initialState, action){
@@ -35,7 +36,6 @@ export default function rootReducer(state = initialState, action){
             return {
                 ...state,
             }
-        
         default:
             return state
     }

@@ -60,4 +60,3 @@ export const findDestiny = async (req, res, next) => {
 
 
 
-

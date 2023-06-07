@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getDestinies } from '../../redux/actions/actionDestiny';
-import CardDestiny from '../CardDestiny/CardDestiny.jsx';
 import { Link } from 'react-router-dom';
+import CardDestiny from '../CardDestiny/CardDestiny.jsx';
+// import SearchBar from '../SearchBar/SearchBar';
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
     
     return (
         <div>
+            {/* <SearchBar/> */}
             <Link to='/create'>
                 <h2>Crear destino</h2>
             </Link>
